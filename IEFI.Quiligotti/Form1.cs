@@ -16,5 +16,22 @@ namespace IEFI.Quiligotti
         {
             InitializeComponent();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCargaProductos_Click(object sender, EventArgs e)
+        {
+            frmProductos frmProductos = new frmProductos();
+            frmProductos.ShowDialog();
+        }
+
+        private void btnCargaVentas_Click(object sender, EventArgs e)
+        {
+            frmVentas frmVentas = new frmVentas();
+            frmVentas.ShowDialog();
+        }
     }
 }
