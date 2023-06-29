@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentas));
             this.lblVentasTitulo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbCargarVentas = new System.Windows.Forms.GroupBox();
@@ -308,9 +309,10 @@
             this.Controls.Add(this.gbCargarVentas);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblVentasTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmVentas";
-            this.Text = "frmVentas";
+            this.Text = "Ventas";
             this.Load += new System.EventHandler(this.frmVentas_Load);
             this.gbCargarVentas.ResumeLayout(false);
             this.gbCargarVentas.PerformLayout();

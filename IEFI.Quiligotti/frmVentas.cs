@@ -88,6 +88,7 @@ namespace IEFI.Quiligotti
                         frmListado.matrizVentas[i, 0] = fechaProdVendido;
                         frmListado.matrizVentas[i, 1] = productoVendido;
                         frmListado.matrizVentas[i, 2] = cantidad;
+                        i++;
 
                         MessageBox.Show("Venta cargada");
 

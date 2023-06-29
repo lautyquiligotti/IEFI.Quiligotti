@@ -54,6 +54,7 @@ namespace IEFI.Quiligotti
                         frmListado.matrizProductos[i, 0] = fechaProdCargado;
                         frmListado.matrizProductos[i, 1] = productoCargado;
                         frmListado.matrizProductos[i, 2] = cantidad;
+                        i++;
 
                         MessageBox.Show("Producto cargado");
                     }
@@ -77,6 +78,11 @@ namespace IEFI.Quiligotti
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

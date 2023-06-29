@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.lblListadoTitulo = new System.Windows.Forms.Label();
             this.dtvMatrizProd = new System.Windows.Forms.DataGridView();
+            this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVolverProductos = new System.Windows.Forms.Button();
             this.btnVolverVentas = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.dtvMatrizVenta = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.columnFechaV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnProdV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCantV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizVenta)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +71,27 @@
             this.dtvMatrizProd.Size = new System.Drawing.Size(1438, 265);
             this.dtvMatrizProd.TabIndex = 3;
             this.dtvMatrizProd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvMatrizProd_CellContentClick);
+            // 
+            // columnFecha
+            // 
+            this.columnFecha.HeaderText = "Fecha";
+            this.columnFecha.MinimumWidth = 10;
+            this.columnFecha.Name = "columnFecha";
+            this.columnFecha.Width = 200;
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.HeaderText = "Producto";
+            this.ColumnNombre.MinimumWidth = 10;
+            this.ColumnNombre.Name = "ColumnNombre";
+            this.ColumnNombre.Width = 200;
+            // 
+            // ColumnCantidad
+            // 
+            this.ColumnCantidad.HeaderText = "Cantidad";
+            this.ColumnCantidad.MinimumWidth = 10;
+            this.ColumnCantidad.Name = "ColumnCantidad";
+            this.ColumnCantidad.Width = 200;
             // 
             // btnVolverProductos
             // 
@@ -129,17 +151,6 @@
             this.dtvMatrizVenta.Size = new System.Drawing.Size(1383, 274);
             this.dtvMatrizVenta.TabIndex = 8;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1022, 954);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 57);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Mostrar Ventas";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // columnFechaV
             // 
             this.columnFechaV.HeaderText = "Fecha";
@@ -161,26 +172,16 @@
             this.ColumnCantV.Name = "ColumnCantV";
             this.ColumnCantV.Width = 200;
             // 
-            // columnFecha
+            // button1
             // 
-            this.columnFecha.HeaderText = "Fecha";
-            this.columnFecha.MinimumWidth = 10;
-            this.columnFecha.Name = "columnFecha";
-            this.columnFecha.Width = 200;
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Producto";
-            this.ColumnNombre.MinimumWidth = 10;
-            this.ColumnNombre.Name = "ColumnNombre";
-            this.ColumnNombre.Width = 200;
-            // 
-            // ColumnCantidad
-            // 
-            this.ColumnCantidad.HeaderText = "Cantidad";
-            this.ColumnCantidad.MinimumWidth = 10;
-            this.ColumnCantidad.Name = "ColumnCantidad";
-            this.ColumnCantidad.Width = 200;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1022, 954);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 57);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Mostrar Ventas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // frmListado
             // 
@@ -196,9 +197,10 @@
             this.Controls.Add(this.btnVolverProductos);
             this.Controls.Add(this.dtvMatrizProd);
             this.Controls.Add(this.lblListadoTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmListado";
-            this.Text = "frmListado";
+            this.Text = "Listado";
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizVenta)).EndInit();
             this.ResumeLayout(false);
