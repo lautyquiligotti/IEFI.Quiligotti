@@ -45,7 +45,6 @@
             this.lblProd = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSelecc = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lstProducto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizVenta)).BeginInit();
@@ -69,11 +68,11 @@
             this.columnFecha,
             this.ColumnNombre,
             this.ColumnCantidad});
-            this.dtvMatrizProd.Location = new System.Drawing.Point(44, 306);
+            this.dtvMatrizProd.Location = new System.Drawing.Point(26, 306);
             this.dtvMatrizProd.Name = "dtvMatrizProd";
             this.dtvMatrizProd.RowHeadersWidth = 82;
             this.dtvMatrizProd.RowTemplate.Height = 33;
-            this.dtvMatrizProd.Size = new System.Drawing.Size(689, 589);
+            this.dtvMatrizProd.Size = new System.Drawing.Size(736, 589);
             this.dtvMatrizProd.TabIndex = 3;
             this.dtvMatrizProd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvMatrizProd_CellContentClick);
             // 
@@ -127,12 +126,13 @@
             this.columnFechaV,
             this.ColumnProdV,
             this.ColumnCantV});
-            this.dtvMatrizVenta.Location = new System.Drawing.Point(795, 306);
+            this.dtvMatrizVenta.Location = new System.Drawing.Point(840, 306);
             this.dtvMatrizVenta.Name = "dtvMatrizVenta";
             this.dtvMatrizVenta.RowHeadersWidth = 82;
             this.dtvMatrizVenta.RowTemplate.Height = 33;
-            this.dtvMatrizVenta.Size = new System.Drawing.Size(689, 589);
+            this.dtvMatrizVenta.Size = new System.Drawing.Size(812, 589);
             this.dtvMatrizVenta.TabIndex = 8;
+            this.dtvMatrizVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvMatrizVenta_CellContentClick);
             // 
             // columnFechaV
             // 
@@ -206,13 +206,6 @@
             this.lblSelecc.TabIndex = 13;
             this.lblSelecc.Text = "Seleccione un Producto";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
-            this.textBox1.TabIndex = 14;
-            // 
             // lstProducto
             // 
             this.lstProducto.FormattingEnabled = true;
@@ -227,9 +220,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1600, 1119);
+            this.ClientSize = new System.Drawing.Size(1676, 1119);
             this.Controls.Add(this.lstProducto);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblSelecc);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblProd);
@@ -271,7 +263,6 @@
         private System.Windows.Forms.Label lblProd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblSelecc;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox lstProducto;
     }
 }

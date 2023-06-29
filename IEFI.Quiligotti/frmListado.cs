@@ -88,5 +88,10 @@ namespace IEFI.Quiligotti
                 }
             }
         }
+
+        private void dtvMatrizVenta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
