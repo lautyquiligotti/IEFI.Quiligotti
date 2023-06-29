@@ -37,30 +37,18 @@
             this.lblFechaVenta = new System.Windows.Forms.Label();
             this.txtProductoVendido = new System.Windows.Forms.TextBox();
             this.lblProductoVendido = new System.Windows.Forms.Label();
-            this.gbConsultarProductos = new System.Windows.Forms.GroupBox();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.txtFiltrar = new System.Windows.Forms.TextBox();
-            this.lblFiltrar = new System.Windows.Forms.Label();
-            this.optProducto = new System.Windows.Forms.RadioButton();
-            this.optCatidad = new System.Windows.Forms.RadioButton();
-            this.lvProductos = new System.Windows.Forms.ListView();
-            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnFechaVenta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cboConsultarProducto = new System.Windows.Forms.ComboBox();
             this.btnVerListado = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.gbCargarVentas.SuspendLayout();
-            this.gbConsultarProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblVentasTitulo
             // 
             this.lblVentasTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVentasTitulo.Location = new System.Drawing.Point(560, 67);
+            this.lblVentasTitulo.Location = new System.Drawing.Point(347, 66);
             this.lblVentasTitulo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblVentasTitulo.Name = "lblVentasTitulo";
             this.lblVentasTitulo.Size = new System.Drawing.Size(262, 83);
@@ -144,121 +132,10 @@
             this.lblProductoVendido.TabIndex = 0;
             this.lblProductoVendido.Text = "Producto Vendido:";
             // 
-            // gbConsultarProductos
-            // 
-            this.gbConsultarProductos.Controls.Add(this.btnFiltrar);
-            this.gbConsultarProductos.Controls.Add(this.txtFiltrar);
-            this.gbConsultarProductos.Controls.Add(this.lblFiltrar);
-            this.gbConsultarProductos.Controls.Add(this.optProducto);
-            this.gbConsultarProductos.Controls.Add(this.optCatidad);
-            this.gbConsultarProductos.Controls.Add(this.lvProductos);
-            this.gbConsultarProductos.Controls.Add(this.cboConsultarProducto);
-            this.gbConsultarProductos.Location = new System.Drawing.Point(730, 200);
-            this.gbConsultarProductos.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.gbConsultarProductos.Name = "gbConsultarProductos";
-            this.gbConsultarProductos.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.gbConsultarProductos.Size = new System.Drawing.Size(650, 517);
-            this.gbConsultarProductos.TabIndex = 3;
-            this.gbConsultarProductos.TabStop = false;
-            this.gbConsultarProductos.Text = "Consultar Productos";
-            // 
-            // btnFiltrar
-            // 
-            this.btnFiltrar.Location = new System.Drawing.Point(214, 444);
-            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(150, 44);
-            this.btnFiltrar.TabIndex = 19;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
-            // 
-            // txtFiltrar
-            // 
-            this.txtFiltrar.Location = new System.Drawing.Point(146, 394);
-            this.txtFiltrar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtFiltrar.Name = "txtFiltrar";
-            this.txtFiltrar.Size = new System.Drawing.Size(276, 31);
-            this.txtFiltrar.TabIndex = 18;
-            // 
-            // lblFiltrar
-            // 
-            this.lblFiltrar.AutoSize = true;
-            this.lblFiltrar.Location = new System.Drawing.Point(238, 304);
-            this.lblFiltrar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblFiltrar.Name = "lblFiltrar";
-            this.lblFiltrar.Size = new System.Drawing.Size(73, 25);
-            this.lblFiltrar.TabIndex = 17;
-            this.lblFiltrar.Text = "Filtrar:";
-            this.lblFiltrar.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // optProducto
-            // 
-            this.optProducto.AutoSize = true;
-            this.optProducto.Location = new System.Drawing.Point(308, 350);
-            this.optProducto.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.optProducto.Name = "optProducto";
-            this.optProducto.Size = new System.Drawing.Size(129, 29);
-            this.optProducto.TabIndex = 16;
-            this.optProducto.TabStop = true;
-            this.optProducto.Text = "Producto";
-            this.optProducto.UseVisualStyleBackColor = true;
-            // 
-            // optCatidad
-            // 
-            this.optCatidad.AutoSize = true;
-            this.optCatidad.Location = new System.Drawing.Point(118, 350);
-            this.optCatidad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.optCatidad.Name = "optCatidad";
-            this.optCatidad.Size = new System.Drawing.Size(129, 29);
-            this.optCatidad.TabIndex = 15;
-            this.optCatidad.TabStop = true;
-            this.optCatidad.Text = "Cantidad";
-            this.optCatidad.UseVisualStyleBackColor = true;
-            this.optCatidad.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // lvProductos
-            // 
-            this.lvProductos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnID,
-            this.columnNombre,
-            this.columnFechaVenta});
-            this.lvProductos.HideSelection = false;
-            this.lvProductos.Location = new System.Drawing.Point(36, 117);
-            this.lvProductos.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.lvProductos.Name = "lvProductos";
-            this.lvProductos.Size = new System.Drawing.Size(546, 144);
-            this.lvProductos.TabIndex = 14;
-            this.lvProductos.UseCompatibleStateImageBehavior = false;
-            this.lvProductos.View = System.Windows.Forms.View.Details;
-            // 
-            // columnID
-            // 
-            this.columnID.Text = "ID";
-            this.columnID.Width = 25;
-            // 
-            // columnNombre
-            // 
-            this.columnNombre.Text = "Nombre";
-            this.columnNombre.Width = 145;
-            // 
-            // columnFechaVenta
-            // 
-            this.columnFechaVenta.Text = "Fecha de Venta";
-            this.columnFechaVenta.Width = 180;
-            // 
-            // cboConsultarProducto
-            // 
-            this.cboConsultarProducto.FormattingEnabled = true;
-            this.cboConsultarProducto.Location = new System.Drawing.Point(166, 58);
-            this.cboConsultarProducto.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.cboConsultarProducto.Name = "cboConsultarProducto";
-            this.cboConsultarProducto.Size = new System.Drawing.Size(274, 33);
-            this.cboConsultarProducto.TabIndex = 0;
-            // 
             // btnVerListado
             // 
             this.btnVerListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerListado.Location = new System.Drawing.Point(640, 754);
+            this.btnVerListado.Location = new System.Drawing.Point(161, 811);
             this.btnVerListado.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnVerListado.Name = "btnVerListado";
             this.btnVerListado.Size = new System.Drawing.Size(286, 67);
@@ -270,7 +147,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::IEFI.Quiligotti.Properties.Resources.ventas2;
-            this.pictureBox3.Location = new System.Drawing.Point(302, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 34);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 135);
@@ -302,10 +179,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(702, 943);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnVerListado);
-            this.Controls.Add(this.gbConsultarProductos);
             this.Controls.Add(this.gbCargarVentas);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblVentasTitulo);
@@ -316,8 +192,6 @@
             this.Load += new System.EventHandler(this.frmVentas_Load);
             this.gbCargarVentas.ResumeLayout(false);
             this.gbCargarVentas.PerformLayout();
-            this.gbConsultarProductos.ResumeLayout(false);
-            this.gbConsultarProductos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -333,19 +207,8 @@
         private System.Windows.Forms.Button btnCargarVenta;
         private System.Windows.Forms.DateTimePicker dtpFechaVenta;
         private System.Windows.Forms.Label lblFechaVenta;
-        private System.Windows.Forms.GroupBox gbConsultarProductos;
-        private System.Windows.Forms.ListView lvProductos;
-        private System.Windows.Forms.ColumnHeader columnID;
-        private System.Windows.Forms.ColumnHeader columnNombre;
-        private System.Windows.Forms.ColumnHeader columnFechaVenta;
-        private System.Windows.Forms.ComboBox cboConsultarProducto;
         private System.Windows.Forms.Button btnVerListado;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RadioButton optCatidad;
-        private System.Windows.Forms.Label lblFiltrar;
-        private System.Windows.Forms.RadioButton optProducto;
-        private System.Windows.Forms.Button btnFiltrar;
-        private System.Windows.Forms.TextBox txtFiltrar;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label lblCantidad;
     }
