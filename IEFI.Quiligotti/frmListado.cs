@@ -14,8 +14,8 @@ namespace IEFI.Quiligotti
     {
 
 
-        public string[,] matrizProductos = new string[5, 3];
-        public string[,] matrizVentas = new string[5, 3];
+        public string[,] matrizProductos = new string[10, 3];
+        public string[,] matrizVentas = new string[10, 3];
         int cp = 0;
         int cv = 0;
 
@@ -29,22 +29,10 @@ namespace IEFI.Quiligotti
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmProductos frmProductos = new frmProductos();
-            frmProductos.ShowDialog();
-            this.Hide();
-        }
-
-        private void btnVolverVentas_Click(object sender, EventArgs e)
-        {
-            frmVentas frmVentas = new frmVentas();
-            frmVentas.ShowDialog();
-            this.Hide();
-        }
-
         private void btnMostrar_Click(object sender, EventArgs e)
         {
+            dtvMatrizProd.Rows.Clear();
+
             for (int i = 0; i < matrizProductos.GetLength(0); i++)
             {
                 if (matrizProductos[i,cp] != null)
@@ -62,12 +50,41 @@ namespace IEFI.Quiligotti
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            dtvMatrizVenta.Rows.Clear();
+
             for (int i = 0; i < matrizVentas.GetLength(0); i++)
             {
                 if (matrizVentas[i,cv] != null)
                 {
                     dtvMatrizVenta.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1], matrizVentas[i, 2]);
                     
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dtvMatrizVenta.Rows.Clear();
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (matrizVentas[i,1] == lstProducto.Text)
+                {
+                    dtvMatrizVenta.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1], matrizVentas[i, 2]);
+                }
+            }
+        }
+
+        private void frmListado_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (matrizVentas[i, 1] != null)
+                {
+                    if (lstProducto.Items.Contains(matrizVentas[i, 1]) == false)
+                    {
+                        lstProducto.Items.Add(matrizVentas[i, 1]);
+                    }
                 }
             }
         }

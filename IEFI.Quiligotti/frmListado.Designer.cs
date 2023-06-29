@@ -44,6 +44,9 @@
             this.lblListVenta = new System.Windows.Forms.Label();
             this.lblProd = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblSelecc = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lstProducto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,12 +196,41 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // lblSelecc
+            // 
+            this.lblSelecc.AutoSize = true;
+            this.lblSelecc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelecc.Location = new System.Drawing.Point(749, 109);
+            this.lblSelecc.Name = "lblSelecc";
+            this.lblSelecc.Size = new System.Drawing.Size(300, 31);
+            this.lblSelecc.TabIndex = 13;
+            this.lblSelecc.Text = "Seleccione un Producto";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 31);
+            this.textBox1.TabIndex = 14;
+            // 
+            // lstProducto
+            // 
+            this.lstProducto.FormattingEnabled = true;
+            this.lstProducto.Location = new System.Drawing.Point(1088, 112);
+            this.lstProducto.Name = "lstProducto";
+            this.lstProducto.Size = new System.Drawing.Size(293, 33);
+            this.lstProducto.TabIndex = 16;
+            this.lstProducto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1600, 1119);
+            this.Controls.Add(this.lstProducto);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblSelecc);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblProd);
             this.Controls.Add(this.lblListVenta);
@@ -212,10 +244,12 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmListado";
             this.Text = "Listado";
+            this.Load += new System.EventHandler(this.frmListado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtvMatrizVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -236,5 +270,8 @@
         private System.Windows.Forms.Label lblListVenta;
         private System.Windows.Forms.Label lblProd;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblSelecc;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox lstProducto;
     }
 }

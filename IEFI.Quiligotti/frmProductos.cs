@@ -50,6 +50,7 @@ namespace IEFI.Quiligotti
                     if (txtCantP.Text != "")
                     {
                         cantidad = txtCantP.Text;
+                        
 
                         frmListado.matrizProductos[i, 0] = fechaProdCargado;
                         frmListado.matrizProductos[i, 1] = productoCargado;
